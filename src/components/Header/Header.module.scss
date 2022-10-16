@@ -1,0 +1,16 @@
+.container{
+  height: 200px;
+  width: 100%; 
+  margin-top: 20px;
+}
+.main{
+  width: 1000px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h1{
+    color: aliceblue;
+    font-size: 3vmax;
+  }
+}
