@@ -14,7 +14,6 @@ function CountrySelector() {
       <div className={style.main}>
         <h2>選択した国の感染者数が表記されます</h2>
         <select onChange={(e) => setSelectionCountry(e.target.value)}>
-          {/*@ts-ignore */}
           {countries.countries.map((country) => (
             <option
               selected={selectionCountry === country.iso3}
