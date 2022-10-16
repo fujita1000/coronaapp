@@ -2,9 +2,12 @@ import React from "react"
 import style from "./Stats.module.scss"
 import useStats from "@/utils/useStats"
 
+type confirmed = any; 
+    {/*@ts-ignore */}
 const Stats = url => {
   const { stats } = useStats(url.url)
   if (!stats) return <p>Loading...</p>
+
 
   return (
     <>
@@ -14,14 +17,17 @@ const Stats = url => {
           <div className={style.container2}>
             <div className={style.main}>
               <p>全感染者数</p>
+              {/*@ts-ignore */}
               <p>{stats.confirmed.value} </p>
             </div>
             <div className={style.main}>
               <p>今日の感染者数</p>
+              {/*@ts-ignore */}
               <p>{stats.recovered.value}</p>
             </div>
             <div className={style.main}>
               <p>死亡者数</p>
+              {/*@ts-ignore */}
               <p>{stats.deaths.value}</p>
             </div>
           </div>
