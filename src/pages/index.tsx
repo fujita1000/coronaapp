@@ -7,7 +7,9 @@ const Home: NextPage = () => {
   return (
     <div className={styles.container}>
       <CountrySelector />
-      <Stats url='https://covid19.mathdro.id/api/' />
+      <Stats
+        url='https://mathdroid/covid-19-api/api/'
+      />
     </div>
   );
 }
