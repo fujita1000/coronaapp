@@ -10,6 +10,7 @@ const Header = () => {
             <Image src={'/logo.png'} width={100} height={100} alt='logo'></Image>
           </div>
           <h1>コロナ感染者数観測アプリ</h1>
+          
         </div>
       </div>
     </header>

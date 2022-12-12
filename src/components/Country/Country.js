@@ -6,8 +6,8 @@ import useStats from '@/utils/useStats';
 function CountrySelector() {
   const { stats: countries, loading, error } = useStats('https://covid19.mathdro.id/api/countries');
   const [selectionCountry, setSelectionCountry] = useState('USA');
-  if (!countries) return <p>Loading...</p>;
-  if (error) return <p>There is and Error...</p>;
+  if (!countries) return <p className={style.loading}>Loading...</p>;
+  if (error) return <p className={style.error}>There is and Error...</p>;
 
   return (
     <div className={style.container}>

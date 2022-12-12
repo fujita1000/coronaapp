@@ -6,7 +6,7 @@ import useStats from "@/utils/useStats"
 
 const Stats = url => {
   const { stats } = useStats(url.url)
-  if (!stats) return <p>Loading...</p>
+  if (!stats) return <p className={style.loading}>現在Loading中です... </p>
 
   return (
     <>
